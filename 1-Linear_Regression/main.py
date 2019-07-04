@@ -222,8 +222,9 @@ def main():
 
     # those initial sanity checks above suggest that our line is way off and we should be able to find a much better one
     # lets tweak the model parameters - using train_model function
-    train_model(learning_rate=0.00001, steps=100, batch_size=1, my_dataframe=california_housing_dataframe)
-    pass
+    # train_model(learning_rate=0.00001, steps=100, batch_size=1, my_dataframe=california_housing_dataframe)
+    train_model(learning_rate=0.005, steps=500, batch_size=10, my_dataframe=california_housing_dataframe)
+
 
 if __name__ == '__main__':
     main()
